@@ -54,7 +54,7 @@ for email in list_of_emails:
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.ehlo()
     server.starttls()
-    server.login('khewalkarpiyush2005@gmail.com','ytcigpbqzohnaqgw')
+    server.login('khewalkarpiyush2005@gmail.com','password')
     server.send_message(msg, from_addr=from_addr, to_addrs=[to_addr])
 
     #flagging the newly sent emails
